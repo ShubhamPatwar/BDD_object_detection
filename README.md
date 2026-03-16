@@ -14,7 +14,7 @@ pip install -r requirements.txt
 [Report for model analysis](Reports/Model_Analysis.md)
 
 ## Dummy Training Loop
-[Report for model analysis](Reports/Model_Training.md)
+[Report for  Model Training](Reports/Model_Training.md)
 
 
 
