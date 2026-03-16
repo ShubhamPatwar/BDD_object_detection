@@ -1,5 +1,9 @@
 # BDD100K Exploratory Data Analysis Report
 
+The data analysis  can be found in this notebook:  
+[Data Analysis Notebook](../notebooks/data_analysis.ipynb)
+
+
 ## 1. Dataset Overview & Integrity
 The dataset consists of high-resolution images split into training and validation sets.
 

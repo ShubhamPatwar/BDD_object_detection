@@ -2,6 +2,9 @@
 
 > Comprehensive evaluation of RT-DETR object detection model on BDD100K dataset
 
+The model analysis  can be found in this notebook:  
+[Model Analysis Notebook](../notebooks/model_analysis.ipynb)
+
 ---
 
 ## Table of Contents
@@ -143,8 +146,7 @@ The model has low recall but produces high-confidence detections. This shows tha
 **Key Insights from Distribution Analysis:**
 - Confidence score distribution shows **heavy concentration at extremes** (very high or very low)
 - Model exhibits **poor calibration**—confidence doesn't match actual correctness
-- Bounding box size distribution **dominated by large predictions**, missing small objects ()
-- Spatial distribution shows **center-biased predictions**
+
 
 
 #### Mean Average Precision by Configuration
