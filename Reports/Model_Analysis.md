@@ -183,7 +183,7 @@ This reveals:
 ---
 
 ## Error Analysis
-
+<!--
 ### Confusion Matrix
 
 ![Confusion Matrix](assets/ma_confusion.png)
@@ -193,6 +193,7 @@ This reveals:
 - Likely errors between semantically similar classes
 - Possible issues: motorcycles confused with bikes, trucks with cars, etc.
 - **Key concern:** Traffic lights and signs does not appear in matrix (unseen classes)
+-->
 
 ### Detailed Error Breakdown
 
