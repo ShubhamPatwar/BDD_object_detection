@@ -225,7 +225,7 @@ This reveals:
 |-------|----------------|--------|
 | **Car** |  Best performance | COCO has abundant car data |
 | **Person** | Good performance | COCO has extensive person data |
-| **Truck/Bus**  Moderate performance | Less frequent in COCO |
+| **Truck/Bus**| Moderate performance | Less frequent in COCO |
 | **Motorcycle/Bike** |  Poor performance | COCO underrepresents |
 | **Traffic Light** |  Not predicted | Class missing from COCO |
 | **Traffic Sign** |  Not predicted | Class missing from COCO |
