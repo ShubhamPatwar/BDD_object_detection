@@ -51,7 +51,7 @@ The model achieves **high precision but critical recall failure**, meaning it on
 Model:          RT-DETR (Real-Time Detection Transformer)
 Backbone:       ResNet-50-vd
 Pretraining:    COCO Object Detection Dataset + O365 Dataset
-Framework:      PaddlePaddle (PekingU/rtdetr_r50vd_coco_o365)
+Framework:      Hugging Face (PekingU/rtdetr_r50vd_coco_o365)
 Input Resolution: 640x640 (typical)
 Training Data:  NOT fine-tuned on BDD100K
 ```
@@ -193,12 +193,12 @@ This reveals:
 - Likely errors between semantically similar classes
 - Possible issues: motorcycles confused with bikes, trucks with cars, etc.
 - **Key concern:** Traffic lights and signs does not appear in matrix (unseen classes)
--->
+
 
 ### Detailed Error Breakdown
 
 ![Error Analysis](assets/ma_error.png)
-
+-->
 **Error Categories:**
 
 | Error Type | Frequency | Cause | Impact |
@@ -278,8 +278,6 @@ Model likely **overdetects in center** (COCO bias) and **underdetects at edges**
 |---------|-----------|-------|
 | **High-confidence FP** | Moderate | Model confident in wrong class (e.g., car detector activates on trucks) |
 | **Low-confidence FP** | High | Spurious detections from feature artifacts |
-| **Spatial FP** | Moderate | False positives in center (COCO bias area) |
-| **Size FP** | Low | Few FPs on small objects (model barely tries) |
 
 **Insight:**
 FP patterns should match **COCO's spatial/class biases**, not BDD's actual distribution.
